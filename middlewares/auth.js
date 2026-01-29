@@ -1,15 +1,17 @@
 function isLoggedIn(req, res, next) {
-  if (!req.session.userId) {
+  if (req.session.userId) {
+    return next()
+  } else {
     return res.redirect("/login")
   }
-  next()
 }
 
 function isAdmin(req, res, next) {
-  if (req.session.role !== "admin") {
+  if (req.session.role === "admin") {
+    return next()
+  } else {
     return res.redirect("/")
   }
-  next()
 }
 
 module.exports = { isLoggedIn, isAdmin }

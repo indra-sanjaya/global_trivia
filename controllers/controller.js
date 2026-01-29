@@ -1,7 +1,6 @@
-const { User, Category, Question, Score, UserQuestion, Sequelize } = require("../models/index")
+const { User, Category, Question, Score, UserQuestion} = require("../models/index")
 const bcrypt = require("bcryptjs")
 const {Op} = require("sequelize")
-const question = require("../models/question")
 
 class Controller {
   static home(req, res) {
@@ -228,7 +227,10 @@ class Controller {
   static async addQuestion(req, res) {
     try {
       await Question.create({
-        ...req.body,
+        text: req.body.text,
+        choices: req.body.choices,
+        answer: req.body.answer,
+        CategoryId: req.body.CategoryId,
         UserId: req.session.userId
       })
       req.flash("success", "Question successfully created")
