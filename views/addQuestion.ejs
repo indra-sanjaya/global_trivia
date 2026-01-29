@@ -72,12 +72,6 @@
       <% }) %>
     <% } %>
 
-    <% if (success && success.length) { %>
-      <% success.forEach(msg => { %>
-        <p style="color:green; text-align:center;"><%= msg %></p>
-      <% }) %>
-    <% } %>
-
   <form action="/admin/questions/add" method="POST">
 
     <label>Question</label>

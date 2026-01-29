@@ -19,6 +19,15 @@ module.exports = (sequelize, DataTypes) => {
         otherKey: 'UserId'
       });
     }
+
+    static async getQuestions(categoryId) {
+
+      return await Question.findAll({
+              where: { CategoryId: categoryId }
+            })
+
+    }
+
   }
 
   Question.init(

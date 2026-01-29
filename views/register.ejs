@@ -85,11 +85,9 @@
     <h2>📝 Register</h2>
 
     <% if (error && error.length) { %>
-      <div class="error"><%= error[0] %></div>
-    <% } %>
-
-    <% if (success && success.length) { %>
-      <div class="success"><%= success[0] %></div>
+      <% error.forEach(msg => { %>
+        <p style="color:red; text-align:center;"><%= msg %></p>
+      <% }) %>
     <% } %>
 
     <form action="/register" method="POST">

@@ -91,9 +91,7 @@ class Controller {
 
   static async questions(req, res) {
     try {
-      const questions = await Question.findAll({
-        where: { CategoryId: req.params.categoryId }
-      })
+      const questions = await Question.getQuestions(req.params.categoryId)
 
       res.render("questions", {
         questions,
@@ -152,7 +150,7 @@ class Controller {
 
       res.render("scores", { scores })
     } catch (error) {
-      res.send(error)
+      res.send(error.message)
     }
   }
 
@@ -160,21 +158,21 @@ class Controller {
     try {
       res.render("addCategory")
     } catch (error) {
-      res.send(error)
+      res.send(error.message)
     }
   }
 
   static async addCategory(req, res) {
     try {
       await Category.create(req.body)
-      req.flash("success", "Category created")
+      req.flash("success", "Category successfully created")
       res.redirect("/categories")
     } catch (error) {
       if (error.name === "SequelizeValidationError") {
         const messages = error.errors.map(e => e.message)
         req.flash("error", messages)
       } else {
-        res.send(error)
+        res.send(error.message)
       }
       res.redirect("/admin/categories/add")
     }
@@ -185,7 +183,7 @@ class Controller {
       const category = await Category.findByPk(req.params.id)
       res.render("editCategory", { category })
     } catch (error) {
-      res.send(error)
+      res.send(error.message)
     }
   }
 
@@ -194,14 +192,14 @@ class Controller {
       await Category.update(req.body, {
         where: { id: req.params.id }
       })
-      req.flash("success", "Category updated")
+      req.flash("success", "Category successfully updated")
       res.redirect("/categories")
     } catch (error) {
       if (error.name === "SequelizeValidationError") {
         const messages = error.errors.map(e => e.message)
         req.flash("error", messages)
       } else {
-        res.send(error)
+        res.send(error.message)
       }
       res.redirect(`/admin/categories/${req.params.id}/edit`)
     }
@@ -210,7 +208,7 @@ class Controller {
   static async deleteCategory(req, res) {
     try {
       await Category.destroy({ where: { id: req.params.id } })
-      req.flash("success", "Category deleted")
+      req.flash("success", "Category successfully deleted")
       res.redirect("/categories")
     } catch (error) {
       req.flash("error", "Failed to delete category")
@@ -233,7 +231,7 @@ class Controller {
         ...req.body,
         UserId: req.session.userId
       })
-      req.flash("success", "Question created")
+      req.flash("success", "Question successfully created")
       res.redirect("/categories")
     } catch (error) {
       if (error.name === "SequelizeValidationError") {
@@ -261,7 +259,7 @@ class Controller {
       await Question.update(req.body, {
         where: { id: req.params.id }
       })
-      req.flash("success", "Question updated")
+      req.flash("success", "Question successfully updated")
       res.redirect("/categories")
     } catch (error) {
       if (error.name === "SequelizeValidationError") {
@@ -278,7 +276,7 @@ class Controller {
     try {
       const question = await Question.findByPk(req.params.id)
       await Question.destroy({ where: { id: req.params.id } })
-      req.flash("success", "Question deleted")
+      req.flash("success", "Question successfully deleted")
       res.redirect(`/questions/${question.CategoryId}`)
     } catch (error) {
       console.log(error);
