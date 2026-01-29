@@ -1,0 +1,703 @@
+[
+  {
+    "text": "What is the capital of Japan?",
+    "choices": ["Tokyo", "Kyoto", "Osaka", "Nagoya"],
+    "answer": "Tokyo",
+    "CategoryId": 1,
+    "UserId": 1
+  },
+  {
+    "text": "How many continents are there on Earth?",
+    "choices": ["5", "6", "7", "8"],
+    "answer": "7",
+    "CategoryId": 1,
+    "UserId": 1
+  },
+  {
+    "text": "Which ocean is the largest?",
+    "choices": ["Atlantic", "Indian", "Arctic", "Pacific"],
+    "answer": "Pacific"
+  ,
+    "CategoryId": 1,
+    "UserId": 1
+  },
+  {
+    "text": "What planet is known as the Red Planet?",
+    "choices": ["Earth", "Mars", "Jupiter", "Venus"],
+    "answer": "Mars",
+    "CategoryId": 1,
+    "UserId": 1
+  },
+  {
+    "text": "Who wrote 'Romeo and Juliet'?",
+    "choices": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+    "answer": "William Shakespeare",
+    "CategoryId": 1,
+    "UserId": 1
+  },
+  {
+    "text": "What gas do plants absorb from the atmosphere?",
+    "choices": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Carbon Dioxide",
+    "CategoryId": 1,
+    "UserId": 1
+  },
+  {
+    "text": "What is the hardest natural substance on Earth?",
+    "choices": ["Gold", "Iron", "Diamond", "Quartz"],
+    "answer": "Diamond",
+    "CategoryId": 1,
+    "UserId": 1
+  },
+  {
+    "text": "Which country invented paper?",
+    "choices": ["India", "Egypt", "China", "Greece"],
+    "answer": "China",
+    "CategoryId": 1,
+    "UserId": 1
+  },
+  {
+    "text": "How many days are there in a leap year?",
+    "choices": ["365", "366", "364", "367"],
+    "answer": "366",
+    "CategoryId": 1,
+    "UserId": 1
+  },
+  {
+    "text": "Which language has the most native speakers?",
+    "choices": ["English", "Spanish", "Mandarin Chinese", "Arabic"],
+    "answer": "Mandarin Chinese",
+    "CategoryId": 1,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has the largest population?",
+    "choices": ["India", "USA", "China", "Russia"],
+    "answer": "China",
+    "CategoryId": 2,
+    "UserId": 1
+  },
+  {
+    "text": "Which animal is the tallest in the world?",
+    "choices": ["Elephant", "Giraffe", "Camel", "Horse"],
+    "answer": "Giraffe",
+    "CategoryId": 2,
+    "UserId": 1
+  },
+  {
+    "text": "Which country is known as the Land of the Rising Sun?",
+    "choices": ["China", "Japan", "Korea", "Thailand"],
+    "answer": "Japan",
+    "CategoryId": 2,
+    "UserId": 1
+  },
+  {
+    "text": "What is the most spoken language in the world?",
+    "choices": ["English", "Spanish", "Mandarin", "Arabic"],
+    "answer": "Mandarin",
+    "CategoryId": 2,
+    "UserId": 1
+  },
+  {
+    "text": "Which continent has the most countries?",
+    "choices": ["Asia", "Europe", "Africa", "South America"],
+    "answer": "Africa",
+    "CategoryId": 2,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has the longest coastline?",
+    "choices": ["Australia", "USA", "Canada", "Russia"],
+    "answer": "Canada",
+    "CategoryId": 2,
+    "UserId": 1
+  },
+  {
+    "text": "What is the largest desert in the world?",
+    "choices": ["Sahara", "Gobi", "Antarctica", "Arabian"],
+    "answer": "Antarctica",
+    "CategoryId": 2,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has the most islands?",
+    "choices": ["Indonesia", "Philippines", "Japan", "Sweden"],
+    "answer": "Sweden",
+    "CategoryId": 2,
+    "UserId": 1
+  },
+  {
+    "text": "Which ocean is the deepest?",
+    "choices": ["Atlantic", "Indian", "Pacific", "Arctic"],
+    "answer": "Pacific",
+    "CategoryId": 2,
+    "UserId": 1
+  },
+  {
+    "text": "Which country uses the Yen currency?",
+    "choices": ["China", "Japan", "South Korea", "Thailand"],
+    "answer": "Japan",
+    "CategoryId": 2,
+    "UserId": 1
+  },
+  {
+    "text": "Which is the longest river in the world?",
+    "choices": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "answer": "Nile",
+    "CategoryId": 3,
+    "UserId": 1
+  },
+  {
+    "text": "Mount Everest is located in which mountain range?",
+    "choices": ["Alps", "Andes", "Himalayas", "Rockies"],
+    "answer": "Himalayas",
+    "CategoryId": 3,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has the city of Istanbul?",
+    "choices": ["Greece", "Turkey", "Iran", "Italy"],
+    "answer": "Turkey",
+    "CategoryId": 3,
+    "UserId": 1
+  },
+  {
+    "text": "Which continent is the Sahara Desert located on?",
+    "choices": ["Asia", "Africa", "Australia", "South America"],
+    "answer": "Africa",
+    "CategoryId": 3,
+    "UserId": 1
+  },
+  {
+    "text": "Which country is both in Europe and Asia?",
+    "choices": ["Russia", "Turkey", "Kazakhstan", "All of these"],
+    "answer": "All of these",
+    "CategoryId": 3,
+    "UserId": 1
+  },
+  {
+    "text": "Which sea separates Europe and Africa?",
+    "choices": ["Black Sea", "Red Sea", "Mediterranean Sea", "Baltic Sea"],
+    "answer": "Mediterranean Sea",
+    "CategoryId": 3,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of Australia?",
+    "choices": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "answer": "Canberra",
+    "CategoryId": 3,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has the Andes mountains?",
+    "choices": ["Brazil", "Chile", "Mexico", "USA"],
+    "answer": "Chile",
+    "CategoryId": 3,
+    "UserId": 1
+  },
+  {
+    "text": "Which country borders both the Atlantic and Pacific oceans?",
+    "choices": ["USA", "Mexico", "Canada", "Chile"],
+    "answer": "Canada",
+    "CategoryId": 3,
+    "UserId": 1
+  },
+  {
+    "text": "Greenland belongs to which country?",
+    "choices": ["Norway", "Iceland", "Denmark", "Canada"],
+    "answer": "Denmark",
+    "CategoryId": 3,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of France?",
+    "choices": ["Paris", "Lyon", "Marseille", "Nice"],
+    "answer": "Paris",
+    "CategoryId": 4,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of Canada?",
+    "choices": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "answer": "Ottawa",
+    "CategoryId": 4,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of Brazil?",
+    "choices": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+    "answer": "Brasília",
+    "CategoryId": 4,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of South Korea?",
+    "choices": ["Busan", "Incheon", "Seoul", "Daegu"],
+    "answer": "Seoul",
+    "CategoryId": 4,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of Egypt?",
+    "choices": ["Alexandria", "Giza", "Cairo", "Luxor"],
+    "answer": "Cairo",
+    "CategoryId": 4,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of Germany?",
+    "choices": ["Munich", "Hamburg", "Frankfurt", "Berlin"],
+    "answer": "Berlin",
+    "CategoryId": 4,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of Thailand?",
+    "choices": ["Chiang Mai", "Bangkok", "Phuket", "Pattaya"],
+    "answer": "Bangkok",
+    "CategoryId": 4,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of New Zealand?",
+    "choices": ["Auckland", "Christchurch", "Wellington", "Hamilton"],
+    "answer": "Wellington",
+    "CategoryId": 4,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of Turkey?",
+    "choices": ["Istanbul", "Izmir", "Ankara", "Bursa"],
+    "answer": "Ankara",
+    "CategoryId": 4,
+    "UserId": 1
+  },
+  {
+    "text": "What is the capital of Argentina?",
+    "choices": ["Cordoba", "Rosario", "Buenos Aires", "Mendoza"],
+    "answer": "Buenos Aires",
+    "CategoryId": 4,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has a red circle on a white flag?",
+    "choices": ["Japan", "Bangladesh", "Poland", "Indonesia"],
+    "answer": "Japan",
+    "CategoryId": 5,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has a flag with stars and stripes?",
+    "choices": ["UK", "USA", "Australia", "Liberia"],
+    "answer": "USA",
+    "CategoryId": 5,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has a maple leaf on its flag?",
+    "choices": ["USA", "Canada", "Austria", "Denmark"],
+    "answer": "Canada",
+    "CategoryId": 5,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has a green, white, and orange vertical flag?",
+    "choices": ["Ireland", "Italy", "Ivory Coast", "India"],
+    "answer": "Ireland",
+    "CategoryId": 5,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has a flag with a red dragon?",
+    "choices": ["China", "Bhutan", "Wales", "Nepal"],
+    "answer": "Wales",
+    "CategoryId": 5,
+    "UserId": 1
+  },
+  {
+    "text": "Which flag has blue and yellow horizontal stripes?",
+    "choices": ["Sweden", "Ukraine", "Finland", "Estonia"],
+    "answer": "Ukraine",
+    "CategoryId": 5,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has a flag with a crescent and star?",
+    "choices": ["Turkey", "Pakistan", "Tunisia", "All of these"],
+    "answer": "All of these",
+    "CategoryId": 5,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has a red and white flag?",
+    "choices": ["Indonesia", "Poland", "Monaco", "All of these"],
+    "answer": "All of these",
+    "CategoryId": 5,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has a blue cross on a white flag?",
+    "choices": ["Sweden", "Finland", "Norway", "Iceland"],
+    "answer": "Finland",
+    "CategoryId": 5,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has the Union Jack on its flag?",
+    "choices": ["UK", "Australia", "New Zealand", "All of these"],
+    "answer": "All of these",
+    "CategoryId": 5,
+    "UserId": 1
+  },
+  {
+    "text": "When did World War II end?",
+    "choices": ["1943", "1945", "1947", "1950"],
+    "answer": "1945",
+    "CategoryId": 6,
+    "UserId": 1
+  },
+  {
+    "text": "Who was the first President of the USA?",
+    "choices": ["Abraham Lincoln", "George Washington", "John Adams", "Thomas Jefferson"],
+    "answer": "George Washington",
+    "CategoryId": 6,
+    "UserId": 1
+  },
+  {
+    "text": "The Great Wall is located in which country?",
+    "choices": ["Japan", "China", "Korea", "Mongolia"],
+    "answer": "China",
+    "CategoryId": 6,
+    "UserId": 1
+  },
+  {
+    "text": "Which empire built the Colosseum?",
+    "choices": ["Greek", "Roman", "Ottoman", "Persian"],
+    "answer": "Roman",
+    "CategoryId": 6,
+    "UserId": 1
+  },
+  {
+    "text": "Who discovered America in 1492?",
+    "choices": ["Vasco da Gama", "Christopher Columbus", "Magellan", "Marco Polo"],
+    "answer": "Christopher Columbus",
+    "CategoryId": 6,
+    "UserId": 1
+  },
+  {
+    "text": "Which revolution began in 1789?",
+    "choices": ["American", "French", "Industrial", "Russian"],
+    "answer": "French",
+    "CategoryId": 6,
+    "UserId": 1
+  },
+  {
+    "text": "Who was known as the Iron Lady?",
+    "choices": ["Angela Merkel", "Margaret Thatcher", "Queen Elizabeth I", "Indira Gandhi"],
+    "answer": "Margaret Thatcher",
+    "CategoryId": 6,
+    "UserId": 1
+  },
+  {
+    "text": "Which war was fought between North and South Vietnam?",
+    "choices": ["Korean War", "Vietnam War", "Cold War", "World War I"],
+    "answer": "Vietnam War",
+    "CategoryId": 6,
+    "UserId": 1
+  },
+  {
+    "text": "Who was the first man on the Moon?",
+    "choices": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Michael Collins"],
+    "answer": "Neil Armstrong",
+    "CategoryId": 6,
+    "UserId": 1
+  },
+  {
+    "text": "The Cold War was mainly between which two countries?",
+    "choices": ["USA & China", "USA & USSR", "UK & Germany", "France & Russia"],
+    "answer": "USA & USSR",
+    "CategoryId": 6,
+    "UserId": 1
+  },
+  {
+    "text": "Which civilization built the pyramids?",
+    "choices": ["Roman", "Greek", "Egyptian", "Mayan"],
+    "answer": "Egyptian",
+    "CategoryId": 7,
+    "UserId": 1
+  },
+  {
+    "text": "The Hanging Gardens belonged to which ancient city?",
+    "choices": ["Rome", "Babylon", "Athens", "Alexandria"],
+    "answer": "Babylon",
+    "CategoryId": 7,
+    "UserId": 1
+  },
+  {
+    "text": "Which civilization used cuneiform writing?",
+    "choices": ["Egyptian", "Sumerian", "Indus", "Chinese"],
+    "answer": "Sumerian",
+    "CategoryId": 7,
+    "UserId": 1
+  },
+  {
+    "text": "Who was the first emperor of Rome?",
+    "choices": ["Julius Caesar", "Augustus", "Nero", "Caligula"],
+    "answer": "Augustus",
+    "CategoryId": 7,
+    "UserId": 1
+  },
+  {
+    "text": "The ancient city of Machu Picchu belonged to which civilization?",
+    "choices": ["Aztec", "Mayan", "Inca", "Olmec"],
+    "answer": "Inca",
+    "CategoryId": 7,
+    "UserId": 1
+  },
+  {
+    "text": "Which civilization built Stonehenge?",
+    "choices": ["Roman", "Celtic", "Neolithic people", "Vikings"],
+    "answer": "Neolithic people",
+    "CategoryId": 7,
+    "UserId": 1
+  },
+  {
+    "text": "What river was central to ancient Egyptian civilization?",
+    "choices": ["Tigris", "Euphrates", "Nile", "Indus"],
+    "answer": "Nile",
+    "CategoryId": 7,
+    "UserId": 1
+  },
+  {
+    "text": "Which civilization worshipped Zeus?",
+    "choices": ["Roman", "Greek", "Egyptian", "Persian"],
+    "answer": "Greek",
+    "CategoryId": 7,
+    "UserId": 1
+  },
+  {
+    "text": "What material were early tools mainly made from?",
+    "choices": ["Iron", "Bronze", "Stone", "Gold"],
+    "answer": "Stone",
+    "CategoryId": 7,
+    "UserId": 1
+  },
+  {
+    "text": "The Indus Valley civilization was located in present-day?",
+    "choices": ["China", "India & Pakistan", "Egypt", "Iran"],
+    "answer": "India & Pakistan",
+    "CategoryId": 7,
+    "UserId": 1
+  },
+  {
+    "text": "When did Indonesia declare independence?",
+    "choices": ["1942", "1945", "1950", "1965"],
+    "answer": "1945",
+    "CategoryId": 8,
+    "UserId": 1
+  },
+  {
+    "text": "Who was Indonesia's first president?",
+    "choices": ["Suharto", "Soekarno", "Habibie", "Megawati"],
+    "answer": "Soekarno",
+    "CategoryId": 8,
+    "UserId": 1
+  },
+  {
+    "text": "What was the capital of Majapahit Kingdom?",
+    "choices": ["Demak", "Trowulan", "Banten", "Pajajaran"],
+    "answer": "Trowulan",
+    "CategoryId": 8,
+    "UserId": 1
+  },
+  {
+    "text": "Which empire was centered in Sumatra?",
+    "choices": ["Majapahit", "Sriwijaya", "Mataram", "Kutai"],
+    "answer": "Sriwijaya",
+    "CategoryId": 8,
+    "UserId": 1
+  },
+  {
+    "text": "Who led the Diponegoro War?",
+    "choices": ["Sultan Agung", "Pattimura", "Diponegoro", "Teuku Umar"],
+    "answer": "Diponegoro",
+    "CategoryId": 8,
+    "UserId": 1
+  },
+  {
+    "text": "Which country colonized Indonesia?",
+    "choices": ["UK", "Portugal", "Spain", "Netherlands"],
+    "answer": "Netherlands",
+    "CategoryId": 8,
+    "UserId": 1
+  },
+  {
+    "text": "What organization drafted Pancasila?",
+    "choices": ["BPUPKI", "PPKI", "KNIP", "VOC"],
+    "answer": "BPUPKI",
+    "CategoryId": 8,
+    "UserId": 1
+  },
+  {
+    "text": "Who was known as the Father of Indonesian Education?",
+    "choices": ["Ki Hajar Dewantara", "Kartini", "Soekarno", "Tan Malaka"],
+    "answer": "Ki Hajar Dewantara",
+    "CategoryId": 8,
+    "UserId": 1
+  },
+  {
+    "text": "What was Indonesia formerly called?",
+    "choices": ["Dutch East Indies", "Malaya", "Nusantara", "Java"],
+    "answer": "Dutch East Indies",
+    "CategoryId": 8,
+    "UserId": 1
+  },
+  {
+    "text": "Which proclamation date is celebrated as Independence Day?",
+    "choices": ["17 August", "1 June", "20 May", "28 October"],
+    "answer": "17 August",
+    "CategoryId": 8,
+    "UserId": 1
+  },
+  {
+    "text": "What is the chemical symbol for water?",
+    "choices": ["O2", "CO2", "H2O", "NaCl"],
+    "answer": "H2O",
+    "CategoryId": 9,
+    "UserId": 1
+  },
+  {
+    "text": "What planet is closest to the sun?",
+    "choices": ["Venus", "Earth", "Mercury", "Mars"],
+    "answer": "Mercury",
+    "CategoryId": 9,
+    "UserId": 1
+  },
+  {
+    "text": "What gas do humans breathe in?",
+    "choices": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+    "answer": "Oxygen",
+    "CategoryId": 9,
+    "UserId": 1
+  },
+  {
+    "text": "Which organ pumps blood?",
+    "choices": ["Brain", "Lungs", "Heart", "Kidney"],
+    "answer": "Heart",
+    "CategoryId": 9,
+    "UserId": 1
+  },
+  {
+    "text": "What force keeps us on the ground?",
+    "choices": ["Magnetism", "Friction", "Gravity", "Energy"],
+    "answer": "Gravity",
+    "CategoryId": 9,
+    "UserId": 1
+  },
+  {
+    "text": "What part of the plant makes food?",
+    "choices": ["Root", "Stem", "Leaf", "Flower"],
+    "answer": "Leaf",
+    "CategoryId": 9,
+    "UserId": 1
+  },
+  {
+    "text": "What is the boiling point of water in Celsius?",
+    "choices": ["90", "100", "110", "120"],
+    "answer": "100",
+    "CategoryId": 9,
+    "UserId": 1
+  },
+  {
+    "text": "Which vitamin comes from sunlight?",
+    "choices": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin D",
+    "CategoryId": 9,
+    "UserId": 1
+  },
+  {
+    "text": "What is the largest organ in the human body?",
+    "choices": ["Heart", "Skin", "Liver", "Brain"],
+    "answer": "Skin",
+    "CategoryId": 9,
+    "UserId": 1
+  },
+  {
+    "text": "What gas do plants produce?",
+    "choices": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Oxygen",
+    "CategoryId": 9,
+    "UserId": 1
+  },
+  {
+    "text": "What is the unit of force?",
+    "choices": ["Watt", "Newton", "Joule", "Pascal"],
+    "answer": "Newton",
+    "CategoryId": 10,
+    "UserId": 1
+  },
+  {
+    "text": "Who formulated the laws of motion?",
+    "choices": ["Einstein", "Newton", "Galileo", "Tesla"],
+    "answer": "Newton",
+    "CategoryId": 10,
+    "UserId": 1
+  },
+  {
+    "text": "What is the speed of light?",
+    "choices": ["300,000 km/s", "150,000 km/s", "1,000 km/s", "3,000 km/s"],
+    "answer": "300,000 km/s",
+    "CategoryId": 10,
+    "UserId": 1
+  },
+  {
+    "text": "What type of energy is stored energy?",
+    "choices": ["Kinetic", "Thermal", "Potential", "Sound"],
+    "answer": "Potential",
+    "CategoryId": 10,
+    "UserId": 1
+  },
+  {
+    "text": "What does a volt measure?",
+    "choices": ["Current", "Resistance", "Voltage", "Power"],
+    "answer": "Voltage",
+    "CategoryId": 10,
+    "UserId": 1
+  },
+  {
+    "text": "Which force opposes motion?",
+    "choices": ["Gravity", "Friction", "Magnetism", "Inertia"],
+    "answer": "Friction",
+    "CategoryId": 10,
+    "UserId": 1
+  },
+  {
+    "text": "What is measured in watts?",
+    "choices": ["Energy", "Force", "Power", "Speed"],
+    "answer": "Power",
+    "CategoryId": 10,
+    "UserId": 1
+  },
+  {
+    "text": "What instrument measures temperature?",
+    "choices": ["Barometer", "Thermometer", "Hygrometer", "Anemometer"],
+    "answer": "Thermometer",
+    "CategoryId": 10,
+    "UserId": 1
+  },
+  {
+    "text": "What law states energy cannot be created or destroyed?",
+    "choices": ["Law of Motion", "Law of Gravity", "Law of Conservation of Energy", "Ohm's Law"],
+    "answer": "Law of Conservation of Energy",
+    "CategoryId": 10,
+    "UserId": 1
+  },
+  {
+    "text": "What is the center of an atom called?",
+    "choices": ["Electron", "Proton", "Nucleus", "Neutron"],
+    "answer": "Nucleus",
+    "CategoryId": 10,
+    "UserId": 1
+  }
+]

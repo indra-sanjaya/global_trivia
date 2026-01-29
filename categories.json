@@ -1,0 +1,90 @@
+[
+  {
+    "name": "General Knowledge",
+    "description": "Mixed general trivia"
+  },
+  {
+    "name": "World Facts",
+    "description": "Interesting facts from around the world"
+  },
+  {
+    "name": "World Geography",
+    "description": "Countries, cities, and landmarks"
+  },
+  {
+    "name": "Capital Cities",
+    "description": "Capitals of the world"
+  },
+  {
+    "name": "Flags of the World",
+    "description": "Identify countries by their flags"
+  },
+  {
+    "name": "World History",
+    "description": "Major historical events"
+  },
+  {
+    "name": "Ancient Civilizations",
+    "description": "History of ancient societies"
+  },
+  {
+    "name": "Indonesian History",
+    "description": "Historical events in Indonesia"
+  },
+  {
+    "name": "General Science",
+    "description": "Basic science knowledge"
+  },
+  {
+    "name": "Physics",
+    "description": "Motion, energy, and forces"
+  },
+  {
+    "name": "Biology",
+    "description": "Living organisms and life"
+  },
+  {
+    "name": "Space & Astronomy",
+    "description": "Planets, stars, and the universe"
+  },
+  {
+    "name": "Technology",
+    "description": "Modern tech and innovations"
+  },
+  {
+    "name": "Programming Basics",
+    "description": "Fundamental programming concepts"
+  },
+  {
+    "name": "Web Development",
+    "description": "HTML, CSS, JavaScript, and the web"
+  },
+  {
+    "name": "Movies",
+    "description": "Films and cinema trivia"
+  },
+  {
+    "name": "Music",
+    "description": "Songs, artists, and albums"
+  },
+  {
+    "name": "Anime & Cartoons",
+    "description": "Animated shows and movies"
+  },
+  {
+    "name": "Football (Soccer)",
+    "description": "The beautiful game"
+  },
+  {
+    "name": "Olympic Games",
+    "description": "Olympic sports and history"
+  },
+  {
+    "name": "Random Facts",
+    "description": "Fun and unexpected trivia"
+  },
+  {
+    "name": "Riddles",
+    "description": "Logic puzzles and riddles"
+  }
+]

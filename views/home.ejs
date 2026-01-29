@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Trivia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4a69bd, #6a89cc);
+      color: white;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(0,0,0,0.25);
+      padding: 50px;
+      border-radius: 10px;
+      width: 400px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 36px;
+    }
+
+    .links a {
+      display: block;
+      margin: 15px 0;
+      padding: 12px;
+      background-color: white;
+      color: #4a69bd;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .links a:hover {
+      background-color: #eaeaea;
+      transform: scale(1.03);
+    }
+
+    .logout {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .logout a {
+      color: #f8f8f8;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌍 Global Trivia</h1>
+
+    <% if (success && success.length) { %>
+      <p style="color:#b8f7b8;"><%= success[0] %></p>
+    <% } %>
+
+    <div class="links">
+      <a href="/categories">Start Quiz</a>
+      <a href="/scores">Leaderboard</a>
+    </div>
+
+    <div class="logout">
+      <a href="/logout">Logout</a>
+    </div>
+  </div>
+
+</body>
+</html>

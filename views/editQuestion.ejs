@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Question</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f6fa; }
+    .container { width: 500px; margin: 80px auto; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    h2 { text-align: center; margin-bottom: 20px; }
+    input, select, textarea, button { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ccc; }
+    button { background: #4a69bd; color: white; border: none; cursor: pointer; font-size: 16px; }
+    button:hover { background: #3b55a0; }
+    .back { display: block; text-align: center; margin-top: 10px; text-decoration: none; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Edit Question</h2>
+
+    <form action="/admin/questions/<%= question.id %>" method="POST">
+      <label>Question</label>
+      <input type="text" name="text" value="<%= question.text %>" required>
+
+      <label>Choices</label>
+      <% question.choices.forEach((c, i) => { %>
+        <input type="text" name="choices[]" value="<%= c %>" placeholder="Choice <%= i + 1 %>" required>
+      <% }) %>
+
+      <label>Correct Answer</label>
+      <input type="text" name="answer" value="<%= question.answer %>" required>
+
+      <label>Category</label>
+      <select name="CategoryId" required>
+        <% categories.forEach(c => { %>
+          <option value="<%= c.id %>" <%= c.id === question.CategoryId ? "selected" : "" %>><%= c.name %></option>
+        <% }) %>
+      </select>
+
+      <button type="submit">Update Question</button>
+    </form>
+
+    <form action="/admin/questions/<%= question.id %>/delete" method="POST">
+      <button type="submit" style="background:red;">Delete Question</button>
+    </form>
+
+    <a href="/categories" class="back">← Back to Categories</a>
+  </div>
+</body>
+</html>

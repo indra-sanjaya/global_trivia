@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Category</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f6fa; }
+    .container { width: 400px; margin: 100px auto; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    h2 { text-align: center; margin-bottom: 20px; }
+    input, textarea, button { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ccc; }
+    button { background: #4a69bd; color: white; border: none; cursor: pointer; font-size: 16px; }
+    button:hover { background: #3b55a0; }
+    .back { display: block; text-align: center; margin-top: 10px; text-decoration: none; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Edit Category</h2>
+
+    <form action="/admin/categories/<%= category.id %>" method="POST">
+      <label>Name</label>
+      <input type="text" name="name" value="<%= category.name %>" required>
+
+      <label>Description</label>
+      <textarea name="description" required><%= category.description %></textarea>
+
+      <button type="submit">Update Category</button>
+    </form>
+
+    <a href="/admin/categories/<%= category.id %>/delete">
+      <button type="submit" style="background:red;" onclick="return confirm('Delete this category?')">Delete Category</button>
+    </a>
+
+    <a href="/categories" class="back">← Back to Categories</a>
+  </div>
+</body>
+</html>

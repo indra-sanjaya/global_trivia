@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Categories</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+    }
+
+    .container {
+      width: 800px;
+      margin: 60px auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .search-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .search-bar input:focus {
+      border-color: #6c63ff;
+    }
+
+    .search-bar button {
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: none;
+      background-color: #6c63ff;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .search-bar button:hover {
+      background-color: #574fe0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    .card a {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: #4a69bd;
+    }
+
+    .actions {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .actions a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #555;
+    }
+
+    .admin {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 15px;
+      background-color: #4a69bd;
+      color: white !important;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .admin:hover {
+      background-color: #3b55a0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Choose Category</h2>
+
+    <% if (error && error.length) { %>
+      <p style="color:red; text-align:center;"><%= error[0] %></p>
+    <% } %>
+
+    <% if (success && success.length) { %>
+      <p style="color:green; text-align:center;"><%= success[0] %></p>
+    <% } %>
+
+    <form method="get" class="search-bar">
+      <input type="search" name="name" placeholder="search by category">
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="grid">
+      <% categories.forEach(cat => { %>
+        <div class="card">
+          <a href="/questions/<%= cat.id %>">
+            <%= cat.name %>
+          </a>
+          <p style="margin-top: 10px; color: #555;"><%= cat.description %></p>
+
+          <% if (locals.role === "admin") { %>
+            <div>
+              <a href="/admin/categories/<%= cat.id %>/edit">✏️ Edit</a>
+              <a href="/admin/categories/<%= cat.id %>/delete" onclick="return confirm('Delete this category?')">🗑 Delete</a>
+            </div>
+          <% } %>
+        </div>
+      <% }) %>
+    </div>
+
+    <div class="actions">
+      <a href="/">← Back Home</a>
+
+      <br>
+      <% if (locals.role === "admin") { %>
+        <br>
+        <a href="/admin/categories/new" class="admin">+ Add Category</a>
+        <a href="/admin/questions/new" class="admin">+ Add Question</a>
+      <% } %>
+    </div>
+  </div>
+
+</body>
+</html>

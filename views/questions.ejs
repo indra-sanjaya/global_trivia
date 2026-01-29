@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+    }
+
+    .container {
+      width: 800px;
+      margin: 50px auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .question-card {
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .question-card p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #4a69bd;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #3b55a0;
+    }
+
+    .finish {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .finish button {
+      padding: 12px 25px;
+      font-size: 16px;
+      background-color: #38ada9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .finish button:hover {
+      background-color: #079992;
+    }
+
+    .back {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back a {
+      color: #555;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Quiz Time 🧠</h2>
+
+  <form action="/quiz/finish" method="POST">
+    <input type="hidden" name="categoryId" value="<%= categoryId %>">
+
+    <% questions.forEach((q, index) => { %>
+      <div class="question-card">
+        <p><b><%= index + 1 %>. <%= q.text %></b></p>
+        <% q.choices.forEach(choice => { %>
+          <label>
+            <input type="radio" name="answers[q_<%= q.id %>]" value="<%= choice %>" required>
+            <%= choice %>
+          </label><br>
+        <% }) %>
+      </div>
+    <% }) %>
+
+    <button type="submit">Finish Quiz</button>
+  </form>
+
+  <% if (locals.role === "admin") { %>
+    <hr>
+    <h3>Admin Actions</h3>
+    <% questions.forEach(q => { %>
+      <div style="margin-bottom:8px;">
+        <b><%= q.text %></b><br>
+        <a href="/admin/questions/<%= q.id %>/edit">✏️ Edit</a> |
+        <a href="/admin/questions/<%= q.id %>/delete"
+          onclick="return confirm('Delete this question?')">🗑 Delete</a>
+      </div>
+    <% }) %>
+  <% } %>
+
+  <br>
+  <a href="/categories">← Back</a>
+</div>
+
+</body>
+</html>

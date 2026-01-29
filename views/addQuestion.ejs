@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Question</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+    }
+
+    .container {
+      width: 500px;
+      margin: 80px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4a69bd;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3b55a0;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Add Question</h2>
+
+    <% if (error && error.length) { %>
+      <p style="color:red; text-align:center;"><%= error[0] %></p>
+    <% } %>
+
+    <% if (success && success.length) { %>
+      <p style="color:green; text-align:center;"><%= success[0] %></p>
+    <% } %>
+
+  <form action="/admin/questions" method="POST">
+
+    <label>Question</label>
+    <input 
+      type="text" 
+      name="text" 
+      placeholder="Enter question"
+      required
+    >
+
+    <label>Choices</label>
+    <input type="text" name="choices[]" placeholder="Choice 1" required>
+    <input type="text" name="choices[]" placeholder="Choice 2" required>
+    <input type="text" name="choices[]" placeholder="Choice 3" required>
+    <input type="text" name="choices[]" placeholder="Choice 4" required>
+
+    <label>Correct Answer</label>
+    <input 
+      type="text" 
+      name="answer" 
+      placeholder="Enter correct answer"
+      required
+    >
+
+    <label>Category</label>
+    <select name="CategoryId" required>
+      <option value="">-- Select Category --</option>
+      <% categories.forEach(c => { %>
+        <option value="<%= c.id %>"><%= c.name %></option>
+      <% }) %>
+    </select>
+
+    <button type="submit">Save Question</button>
+
+  </form>
+
+    <a href="/categories" class="back">← Back to Categories</a>
+  </div>
+
+</body>
+</html>
