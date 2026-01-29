@@ -25,15 +25,39 @@ module.exports = (sequelize, DataTypes) => {
     {
       text: { 
         type: DataTypes.TEXT, 
-        allowNull: false 
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "Question text is required"
+          },
+          notNull: {
+            msg: "Question text is required"
+          }
+        }
       },
       choices: { 
         type: DataTypes.JSON, 
-        allowNull: false 
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "Choices is required"
+          },
+          notNull: {
+            msg: "Choices is required"
+          }
+        }
       },
       answer: { 
         type: DataTypes.STRING, 
-        allowNull: false 
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "Answer is required"
+          },
+          notNull: {
+            msg: "Answer is required"
+          }
+        }
       },
       UserId: { 
         type: DataTypes.INTEGER,

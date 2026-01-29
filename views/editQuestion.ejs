@@ -17,20 +17,32 @@
   <div class="container">
     <h2>Edit Question</h2>
 
-    <form action="/admin/questions/<%= question.id %>" method="POST">
+    <% if (error && error.length) { %>
+      <% error.forEach(msg => { %>
+        <p style="color:red; text-align:center;"><%= msg %></p>
+      <% }) %>
+    <% } %>
+
+    <% if (success && success.length) { %>
+      <% success.forEach(msg => { %>
+        <p style="color:green; text-align:center;"><%= msg %></p>
+      <% }) %>
+    <% } %>
+
+    <form action="/admin/questions/<%= question.id %>/edit" method="POST">
       <label>Question</label>
-      <input type="text" name="text" value="<%= question.text %>" required>
+      <input type="text" name="text" value="<%= question.text %>" >
 
       <label>Choices</label>
       <% question.choices.forEach((c, i) => { %>
-        <input type="text" name="choices[]" value="<%= c %>" placeholder="Choice <%= i + 1 %>" required>
+        <input type="text" name="choices[]" value="<%= c %>" placeholder="Choice <%= i + 1 %>" >
       <% }) %>
 
       <label>Correct Answer</label>
-      <input type="text" name="answer" value="<%= question.answer %>" required>
+      <input type="text" name="answer" value="<%= question.answer %>" >
 
       <label>Category</label>
-      <select name="CategoryId" required>
+      <select name="CategoryId" >
         <% categories.forEach(c => { %>
           <option value="<%= c.id %>" <%= c.id === question.CategoryId ? "selected" : "" %>><%= c.name %></option>
         <% }) %>

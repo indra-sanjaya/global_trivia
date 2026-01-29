@@ -36,10 +36,10 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
         validate: {
           notEmpty: {
-            msg: "Username is required"
+            msg: "Email is required"
           },
           notNull: {
-            msg: "Username is required"
+            msg: "Email is required"
           }
         }
       },
@@ -48,10 +48,14 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         validate: {
           notEmpty: {
-            msg: "Username is required"
+            msg: "Password is required"
           },
           notNull: {
-            msg: "Username is required"
+            msg: "Password is required"
+          },
+          len: {
+            args: 10,
+            msg: "Password must be at least 10 characters"
           }
         }
       },

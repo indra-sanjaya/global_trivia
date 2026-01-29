@@ -72,19 +72,23 @@
     <h2>Add Category</h2>
 
     <% if (error && error.length) { %>
-      <p style="color:red; text-align:center;"><%= error[0] %></p>
+      <% error.forEach(msg => { %>
+        <p style="color:red; text-align:center;"><%= msg %></p>
+      <% }) %>
     <% } %>
 
     <% if (success && success.length) { %>
-      <p style="color:green; text-align:center;"><%= success[0] %></p>
+      <% success.forEach(msg => { %>
+        <p style="color:green; text-align:center;"><%= msg %></p>
+      <% }) %>
     <% } %>
 
-    <form action="/admin/categories" method="POST">
+    <form action="/admin/categories/add" method="POST">
       <label>Category Name</label>
-      <input type="text" name="name" placeholder="Category name" required>
+      <input type="text" name="name" placeholder="Category name">
 
       <label>Description</label><br>
-      <textarea name="description" placeholder="Enter description" required></textarea>
+      <textarea name="description" placeholder="Enter description"></textarea>
 
       <button type="submit">Save</button>
     </form>

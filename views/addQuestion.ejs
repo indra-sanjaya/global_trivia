@@ -67,39 +67,43 @@
     <h2>Add Question</h2>
 
     <% if (error && error.length) { %>
-      <p style="color:red; text-align:center;"><%= error[0] %></p>
+      <% error.forEach(msg => { %>
+        <p style="color:red; text-align:center;"><%= msg %></p>
+      <% }) %>
     <% } %>
 
     <% if (success && success.length) { %>
-      <p style="color:green; text-align:center;"><%= success[0] %></p>
+      <% success.forEach(msg => { %>
+        <p style="color:green; text-align:center;"><%= msg %></p>
+      <% }) %>
     <% } %>
 
-  <form action="/admin/questions" method="POST">
+  <form action="/admin/questions/add" method="POST">
 
     <label>Question</label>
     <input 
       type="text" 
       name="text" 
       placeholder="Enter question"
-      required
+      
     >
 
     <label>Choices</label>
-    <input type="text" name="choices[]" placeholder="Choice 1" required>
-    <input type="text" name="choices[]" placeholder="Choice 2" required>
-    <input type="text" name="choices[]" placeholder="Choice 3" required>
-    <input type="text" name="choices[]" placeholder="Choice 4" required>
+    <input type="text" name="choices[]" placeholder="Choice 1" >
+    <input type="text" name="choices[]" placeholder="Choice 2" >
+    <input type="text" name="choices[]" placeholder="Choice 3" >
+    <input type="text" name="choices[]" placeholder="Choice 4" >
 
     <label>Correct Answer</label>
     <input 
       type="text" 
       name="answer" 
       placeholder="Enter correct answer"
-      required
+      
     >
 
     <label>Category</label>
-    <select name="CategoryId" required>
+    <select name="CategoryId" >
       <option value="">-- Select Category --</option>
       <% categories.forEach(c => { %>
         <option value="<%= c.id %>"><%= c.name %></option>

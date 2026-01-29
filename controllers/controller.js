@@ -1,4 +1,4 @@
-const { User, Category, Question, Score, UserQuestion } = require("../models/index")
+const { User, Category, Question, Score, UserQuestion, Sequelize } = require("../models/index")
 const bcrypt = require("bcryptjs")
 const {Op} = require("sequelize")
 const question = require("../models/question")
@@ -49,7 +49,12 @@ class Controller {
       await User.create(req.body)
       res.redirect("/login")
     } catch (error) {
-      req.flash("error", "Register failed")
+      if (error.name === "SequelizeValidationError") {
+        const messages = error.errors.map(e => e.message)
+        req.flash("error", messages)
+      } else {
+        res.send(error)
+      }
       res.redirect("/register")
     }
   }
@@ -104,25 +109,21 @@ class Controller {
       const { categoryId, answers } = req.body
       const userId = req.session.userId
 
-      if (!answers) return res.redirect(`/questions/${categoryId}`)
-
       let correctCount = 0
 
       for (const [key, userAnswer] of Object.entries(answers)) {
         const questionId = key.replace("q_", "")
         const question = await Question.findByPk(questionId)
+        const isCorrect = userAnswer === question.answer
 
-        if (question) {
-          const isCorrect = userAnswer.trim() === question.answer.trim()
-          if (isCorrect) correctCount++
+        if (isCorrect) correctCount++
 
-          await UserQuestion.create({
-            UserId: userId,
-            QuestionId: question.id,
-            answer: userAnswer,
-            isCorrect
-          })
-        }
+        await UserQuestion.create({
+          UserId: userId,
+          QuestionId: question.id,
+          answer: userAnswer,
+          isCorrect
+        })
       }
 
       await Score.create({
@@ -169,7 +170,12 @@ class Controller {
       req.flash("success", "Category created")
       res.redirect("/categories")
     } catch (error) {
-      req.flash("error", "Failed to create category")
+      if (error.name === "SequelizeValidationError") {
+        const messages = error.errors.map(e => e.message)
+        req.flash("error", messages)
+      } else {
+        res.send(error)
+      }
       res.redirect("/admin/categories/add")
     }
   }
@@ -191,7 +197,12 @@ class Controller {
       req.flash("success", "Category updated")
       res.redirect("/categories")
     } catch (error) {
-      req.flash("error", "Failed to update category")
+      if (error.name === "SequelizeValidationError") {
+        const messages = error.errors.map(e => e.message)
+        req.flash("error", messages)
+      } else {
+        res.send(error)
+      }
       res.redirect(`/admin/categories/${req.params.id}/edit`)
     }
   }
@@ -225,7 +236,12 @@ class Controller {
       req.flash("success", "Question created")
       res.redirect("/categories")
     } catch (error) {
-      req.flash("error", "Failed to create question")
+      if (error.name === "SequelizeValidationError") {
+        const messages = error.errors.map(e => e.message)
+        req.flash("error", messages)
+      } else {
+        res.send(error)
+      }
       res.redirect("/admin/questions/add")
     }
   }
@@ -248,7 +264,12 @@ class Controller {
       req.flash("success", "Question updated")
       res.redirect("/categories")
     } catch (error) {
-      req.flash("error", "Failed to update question")
+      if (error.name === "SequelizeValidationError") {
+        const messages = error.errors.map(e => e.message)
+        req.flash("error", messages)
+      } else {
+        res.send(error)
+      }
       res.redirect(`/admin/questions/${req.params.id}/edit`)
     }
   }
