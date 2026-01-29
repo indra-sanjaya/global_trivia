@@ -26,14 +26,14 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: { model: 'Users', key: 'id' },
         onUpdate: 'CASCADE',
-        onDelete: 'SET NULL'
+        onDelete: 'CASCADE'
       },
       CategoryId: {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: { model: 'Categories', key: 'id' },
         onUpdate: 'CASCADE',
-        onDelete: 'SET NULL'
+        onDelete: 'CASCADE'
       },
       createdAt: {
         allowNull: false,

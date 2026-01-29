@@ -16,8 +16,7 @@
   {
     "text": "Which ocean is the largest?",
     "choices": ["Atlantic", "Indian", "Arctic", "Pacific"],
-    "answer": "Pacific"
-  ,
+    "answer": "Pacific",
     "CategoryId": 1,
     "UserId": 1
   },
@@ -698,6 +697,846 @@
     "choices": ["Electron", "Proton", "Nucleus", "Neutron"],
     "answer": "Nucleus",
     "CategoryId": 10,
+    "UserId": 1
+  },
+  {
+    "text": "Which organelle is known as the powerhouse of the cell?",
+    "choices": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+    "answer": "Mitochondria",
+    "CategoryId": 11,
+    "UserId": 1
+  },
+  {
+    "text": "What is the primary gas humans breathe in to survive?",
+    "choices": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Hydrogen"],
+    "answer": "Oxygen",
+    "CategoryId": 11,
+    "UserId": 1
+  },
+  {
+    "text": "How many chambers does a human heart have?",
+    "choices": ["2", "3", "4", "5"],
+    "answer": "4",
+    "CategoryId": 11,
+    "UserId": 1
+  },
+  {
+    "text": "Which molecule carries genetic information?",
+    "choices": ["ATP", "DNA", "RNA", "Protein"],
+    "answer": "DNA",
+    "CategoryId": 11,
+    "UserId": 1
+  },
+  {
+    "text": "What is the largest organ in the human body?",
+    "choices": ["Liver", "Brain", "Heart", "Skin"],
+    "answer": "Skin",
+    "CategoryId": 11,
+    "UserId": 1
+  },
+  {
+    "text": "What process do plants use to convert sunlight into food?",
+    "choices": ["Respiration", "Fermentation", "Photosynthesis", "Digestion"],
+    "answer": "Photosynthesis",
+    "CategoryId": 11,
+    "UserId": 1
+  },
+  {
+    "text": "What is the basic unit of life?",
+    "choices": ["Atom", "Cell", "Tissue", "Organ"],
+    "answer": "Cell",
+    "CategoryId": 11,
+    "UserId": 1
+  },
+  {
+    "text": "Which blood cells are responsible for fighting infections?",
+    "choices": ["Red blood cells", "Platelets", "White blood cells", "Plasma"],
+    "answer": "White blood cells",
+    "CategoryId": 11,
+    "UserId": 1
+  },
+  {
+    "text": "What part of the plant is responsible for absorbing water?",
+    "choices": ["Leaves", "Stem", "Roots", "Flowers"],
+    "answer": "Roots",
+    "CategoryId": 11,
+    "UserId": 1
+  },
+  {
+    "text": "Which vitamin is produced when the skin is exposed to sunlight?",
+    "choices": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin D",
+    "CategoryId": 11,
+    "UserId": 1
+  },
+  {
+    "text": "Which planet is known as the Red Planet?",
+    "choices": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "answer": "Mars",
+    "CategoryId": 12,
+    "UserId": 1
+  },
+  {
+    "text": "What is the largest planet in our solar system?",
+    "choices": ["Earth", "Neptune", "Jupiter", "Saturn"],
+    "answer": "Jupiter",
+    "CategoryId": 12,
+    "UserId": 1
+  },
+  {
+    "text": "What is the name of our galaxy?",
+    "choices": ["Andromeda", "Milky Way", "Sombrero", "Messier 87"],
+    "answer": "Milky Way",
+    "CategoryId": 12,
+    "UserId": 1
+  },
+  {
+    "text": "Which planet is closest to the Sun?",
+    "choices": ["Venus", "Mercury", "Earth", "Mars"],
+    "answer": "Mercury",
+    "CategoryId": 12,
+    "UserId": 1
+  },
+  {
+    "text": "What force keeps planets in orbit around the Sun?",
+    "choices": ["Magnetism", "Friction", "Gravity", "Inertia"],
+    "answer": "Gravity",
+    "CategoryId": 12,
+    "UserId": 1
+  },
+  {
+    "text": "Which star is at the center of our solar system?",
+    "choices": ["Sirius", "North Star", "The Sun", "Proxima Centauri"],
+    "answer": "The Sun",
+    "CategoryId": 12,
+    "UserId": 1
+  },
+  {
+    "text": "What are Saturn's rings primarily made of?",
+    "choices": ["Gas", "Rock and Ice", "Liquid Nitrogen", "Metal"],
+    "answer": "Rock and Ice",
+    "CategoryId": 12,
+    "UserId": 1
+  },
+  {
+    "text": "Which planet is famous for its Great Red Spot?",
+    "choices": ["Jupiter", "Mars", "Venus", "Neptune"],
+    "answer": "Jupiter",
+    "CategoryId": 12,
+    "UserId": 1
+  },
+  {
+    "text": "What is the hottest planet in our solar system?",
+    "choices": ["Mercury", "Venus", "Mars", "Jupiter"],
+    "answer": "Venus",
+    "CategoryId": 12,
+    "UserId": 1
+  },
+  {
+    "text": "How many moons does Earth have?",
+    "choices": ["0", "1", "2", "3"],
+    "answer": "1",
+    "CategoryId": 12,
+    "UserId": 1
+  },
+  {
+    "text": "What does 'AI' stand for?",
+    "choices": ["Actual Intelligence", "Artificial Intelligence", "Automated Input", "Advanced Interface"],
+    "answer": "Artificial Intelligence",
+    "CategoryId": 13,
+    "UserId": 1
+  },
+  {
+    "text": "Who is the co-founder of Microsoft?",
+    "choices": ["Steve Jobs", "Elon Musk", "Bill Gates", "Mark Zuckerberg"],
+    "answer": "Bill Gates",
+    "CategoryId": 13,
+    "UserId": 1
+  },
+  {
+    "text": "Which company developed the iPhone?",
+    "choices": ["Samsung", "Google", "Apple", "Microsoft"],
+    "answer": "Apple",
+    "CategoryId": 13,
+    "UserId": 1
+  },
+  {
+    "text": "What is the main function of a router?",
+    "choices": ["Display images", "Store files", "Forward data packets", "Type text"],
+    "answer": "Forward data packets",
+    "CategoryId": 13,
+    "UserId": 1
+  },
+  {
+    "text": "What does 'URL' stand for?",
+    "choices": ["Uniform Resource Locator", "Universal Radio Link", "User Record Log", "United Resource List"],
+    "answer": "Uniform Resource Locator",
+    "CategoryId": 13,
+    "UserId": 1
+  },
+  {
+    "text": "Which social media platform is known for 'Tweets'?",
+    "choices": ["Facebook", "Instagram", "X (Twitter)", "Snapchat"],
+    "answer": "X (Twitter)",
+    "CategoryId": 13,
+    "UserId": 1
+  },
+  {
+    "text": "What does 'RAM' stand for?",
+    "choices": ["Read Access Memory", "Random Access Memory", "Rapid Action Module", "Remote Area Mode"],
+    "answer": "Random Access Memory",
+    "CategoryId": 13,
+    "UserId": 1
+  },
+  {
+    "text": "Which year was the first iPhone released?",
+    "choices": ["2005", "2007", "2009", "2010"],
+    "answer": "2007",
+    "CategoryId": 13,
+    "UserId": 1
+  },
+  {
+    "text": "What is the name of the operating system developed by Google for mobile devices?",
+    "choices": ["iOS", "Windows", "Android", "Linux"],
+    "answer": "Android",
+    "CategoryId": 13,
+    "UserId": 1
+  },
+  {
+    "text": "What is 'Bluetooth' used for?",
+    "choices": ["Web browsing", "Short-range wireless communication", "Hard drive storage", "Solar power"],
+    "answer": "Short-range wireless communication",
+    "CategoryId": 13,
+    "UserId": 1
+  },
+  {
+    "text": "What does HTML stand for?",
+    "choices": ["Hyper Trainer Marking Language", "Hyper Text Markup Language", "High Text Machine Language", "Hyper Tool Multi Language"],
+    "answer": "Hyper Text Markup Language",
+    "CategoryId": 14,
+    "UserId": 1
+  },
+  {
+    "text": "Which symbol is used to write comments in JavaScript?",
+    "choices": ["//", "<!-- -->", "#", "/* */"],
+    "answer": "//",
+    "CategoryId": 14,
+    "UserId": 1
+  },
+  {
+    "text": "Which data type is used to store true or false values?",
+    "choices": ["String", "Number", "Boolean", "Object"],
+    "answer": "Boolean",
+    "CategoryId": 14,
+    "UserId": 1
+  },
+  {
+    "text": "What keyword is used to declare a variable in JavaScript?",
+    "choices": ["var", "int", "string", "define"],
+    "answer": "var",
+    "CategoryId": 14,
+    "UserId": 1
+  },
+  {
+    "text": "Which operator is used to compare two values for equality?",
+    "choices": ["=", "==", "!=", ">"],
+    "answer": "==",
+    "CategoryId": 14,
+    "UserId": 1
+  },
+  {
+    "text": "Which loop will always execute at least once?",
+    "choices": ["for", "while", "do...while", "foreach"],
+    "answer": "do...while",
+    "CategoryId": 14,
+    "UserId": 1
+  },
+  {
+    "text": "What is the output of 2 + '2' in JavaScript?",
+    "choices": ["4", "22", "NaN", "undefined"],
+    "answer": "22",
+    "CategoryId": 14,
+    "UserId": 1
+  },
+  {
+    "text": "Which function is used to print output to the console?",
+    "choices": ["print()", "console.log()", "echo()", "write()"],
+    "answer": "console.log()",
+    "CategoryId": 14,
+    "UserId": 1
+  },
+  {
+    "text": "Which keyword is used to define a function?",
+    "choices": ["function", "method", "def", "func"],
+    "answer": "function",
+    "CategoryId": 14,
+    "UserId": 1
+  },
+  {
+    "text": "Which value represents 'no value' in JavaScript?",
+    "choices": ["false", "0", "null", "NaN"],
+    "answer": "null",
+    "CategoryId": 14,
+    "UserId": 1
+  },
+  {
+    "text": "What does HTML stand for?",
+    "choices": ["HyperText Markup Language", "High Tech Modern Language", "Hyperlink Text Mode", "Home Tool Markup Language"],
+    "answer": "HyperText Markup Language",
+    "CategoryId": 15,
+    "UserId": 1
+  },
+  {
+    "text": "Which CSS property is used to change the text color?",
+    "choices": ["text-style", "font-color", "color", "background-color"],
+    "answer": "color",
+    "CategoryId": 15,
+    "UserId": 1
+  },
+  {
+    "text": "Which HTML tag is used to define an unordered list?",
+    "choices": ["<ol>", "<li>", "<ul>", "<list>"],
+    "answer": "<ul>",
+    "CategoryId": 15,
+    "UserId": 1
+  },
+  {
+    "text": "In JavaScript, which keyword is used to declare a constant variable?",
+    "choices": ["var", "let", "const", "static"],
+    "answer": "const",
+    "CategoryId": 15,
+    "UserId": 1
+  },
+  {
+    "text": "What does the 'C' in CSS stand for?",
+    "choices": ["Central", "Cascading", "Control", "Column"],
+    "answer": "Cascading",
+    "CategoryId": 15,
+    "UserId": 1
+  },
+  {
+    "text": "Which HTML element is used to insert a line break?",
+    "choices": ["<break>", "<lb>", "<br>", "<hr>"],
+    "answer": "<br>",
+    "CategoryId": 15,
+    "UserId": 1
+  },
+  {
+    "text": "Which attribute is used to provide an image's source path?",
+    "choices": ["href", "src", "link", "alt"],
+    "answer": "src",
+    "CategoryId": 15,
+    "UserId": 1
+  },
+  {
+    "text": "Which HTTP status code represents 'Not Found'?",
+    "choices": ["200", "404", "500", "301"],
+    "answer": "404",
+    "CategoryId": 15,
+    "UserId": 1
+  },
+  {
+    "text": "What is the purpose of the <head> tag?",
+    "choices": ["To show the main title", "To contain metadata and links", "To define the footer", "To create a header image"],
+    "answer": "To contain metadata and links",
+    "CategoryId": 15,
+    "UserId": 1
+  },
+  {
+    "text": "Which tool is commonly used to inspect a website's code in a browser?",
+    "choices": ["Code Editor", "Terminal", "Developer Tools", "Photoshop"],
+    "answer": "Developer Tools",
+    "CategoryId": 15,
+    "UserId": 1
+  },
+  {
+    "text": "Who directed the movie 'Inception'?",
+    "choices": ["Steven Spielberg", "Christopher Nolan", "Quentin Tarantino", "James Cameron"],
+    "answer": "Christopher Nolan",
+    "CategoryId": 16,
+    "UserId": 1
+  },
+  {
+    "text": "Which film won the Oscar for Best Picture in 2020?",
+    "choices": ["1917", "Joker", "Parasite", "The Irishman"],
+    "answer": "Parasite",
+    "CategoryId": 16,
+    "UserId": 1
+  },
+  {
+    "text": "What is the name of the kingdom in 'The Lion King'?",
+    "choices": ["Pride Lands", "Far Far Away", "Zootopia", "The Serengeti"],
+    "answer": "Pride Lands",
+    "CategoryId": 16,
+    "UserId": 1
+  },
+  {
+    "text": "Which actor played the lead in 'Mission: Impossible'?",
+    "choices": ["Brad Pitt", "Tom Cruise", "Will Smith", "Keanu Reeves"],
+    "answer": "Tom Cruise",
+    "CategoryId": 16,
+    "UserId": 1
+  },
+  {
+    "text": "What is the highest-grossing film of all time (unadjusted for inflation)?",
+    "choices": ["Avengers: Endgame", "Titanic", "Avatar", "Star Wars: The Force Awakens"],
+    "answer": "Avatar",
+    "CategoryId": 16,
+    "UserId": 1
+  },
+  {
+    "text": "In 'Star Wars', what is the name of Han Solo's ship?",
+    "choices": ["Enterprise", "Millennium Falcon", "X-Wing", "Discovery"],
+    "answer": "Millennium Falcon",
+    "CategoryId": 16,
+    "UserId": 1
+  },
+  {
+    "text": "Who played the Joker in 'The Dark Knight'?",
+    "choices": ["Jack Nicholson", "Jared Leto", "Heath Ledger", "Joaquin Phoenix"],
+    "answer": "Heath Ledger",
+    "CategoryId": 16,
+    "UserId": 1
+  },
+  {
+    "text": "Which movie features a magical board game that comes to life?",
+    "choices": ["Zathura", "Jumanji", "Monopoly", "Clue"],
+    "answer": "Jumanji",
+    "CategoryId": 16,
+    "UserId": 1
+  },
+  {
+    "text": "What is the name of the fictional city protected by Batman?",
+    "choices": ["Metropolis", "Central City", "Gotham City", "Star City"],
+    "answer": "Gotham City",
+    "CategoryId": 16,
+    "UserId": 1
+  },
+  {
+    "text": "Which movie series features the character Katniss Everdeen?",
+    "choices": ["Divergent", "The Hunger Games", "Twilight", "Maze Runner"],
+    "answer": "The Hunger Games",
+    "CategoryId": 16,
+    "UserId": 1
+  },
+  {
+    "text": "Who is known as the 'King of Pop'?",
+    "choices": ["Elvis Presley", "Michael Jackson", "Prince", "Freddie Mercury"],
+    "answer": "Michael Jackson",
+    "CategoryId": 17,
+    "UserId": 1
+  },
+  {
+    "text": "Which band released the album 'Abbey Road'?",
+    "choices": ["The Rolling Stones", "The Beatles", "Led Zeppelin", "Pink Floyd"],
+    "answer": "The Beatles",
+    "CategoryId": 17,
+    "UserId": 1
+  },
+  {
+    "text": "What instrument does Lizzo play?",
+    "choices": ["Violin", "Flute", "Saxophone", "Piano"],
+    "answer": "Flute",
+    "CategoryId": 17,
+    "UserId": 1
+  },
+  {
+    "text": "Which artist has the most Grammy wins of all time?",
+    "choices": ["Georg Solti", "Quincy Jones", "Beyoncé", "Stevie Wonder"],
+    "answer": "Beyoncé",
+    "CategoryId": 17,
+    "UserId": 1
+  },
+  {
+    "text": "What is the name of the lead singer of Queen?",
+    "choices": ["Mick Jagger", "David Bowie", "Freddie Mercury", "Robert Plant"],
+    "answer": "Freddie Mercury",
+    "CategoryId": 17,
+    "UserId": 1
+  },
+  {
+    "text": "Which city is considered the birthplace of Jazz?",
+    "choices": ["Chicago", "New York", "New Orleans", "Nashville"],
+    "answer": "New Orleans",
+    "CategoryId": 17,
+    "UserId": 1
+  },
+  {
+    "text": "In music theory, how many notes are in a standard major scale?",
+    "choices": ["5", "7", "8", "12"],
+    "answer": "7",
+    "CategoryId": 17,
+    "UserId": 1
+  },
+  {
+    "text": "Who sang the 2021 hit 'Drivers License'?",
+    "choices": ["Billie Eilish", "Olivia Rodrigo", "Taylor Swift", "Dua Lipa"],
+    "answer": "Olivia Rodrigo",
+    "CategoryId": 17,
+    "UserId": 1
+  },
+  {
+    "text": "Which classical composer became deaf later in life?",
+    "choices": ["Mozart", "Bach", "Beethoven", "Vivaldi"],
+    "answer": "Beethoven",
+    "CategoryId": 17,
+    "UserId": 1
+  },
+  {
+    "text": "What is the title of the best-selling album of all time?",
+    "choices": ["Back in Black", "The Dark Side of the Moon", "Thriller", "Greatest Hits"],
+    "answer": "Thriller",
+    "CategoryId": 17,
+    "UserId": 1
+  },
+  {
+    "text": "Who is the main character in Naruto?",
+    "choices": ["Sasuke Uchiha", "Naruto Uzumaki", "Kakashi Hatake", "Itachi Uchiha"],
+    "answer": "Naruto Uzumaki",
+    "CategoryId": 18,
+    "UserId": 1
+  },
+  {
+    "text": "What is the name of Luffy's crew in One Piece?",
+    "choices": ["Red Hair Pirates", "Heart Pirates", "Straw Hat Pirates", "Blackbeard Pirates"],
+    "answer": "Straw Hat Pirates",
+    "CategoryId": 18,
+    "UserId": 1
+  },
+  {
+    "text": "Which anime features Dragon Balls that summon a dragon?",
+    "choices": ["Naruto", "Bleach", "Dragon Ball Z", "One Punch Man"],
+    "answer": "Dragon Ball Z",
+    "CategoryId": 18,
+    "UserId": 1
+  },
+  {
+    "text": "Who is the creator of SpongeBob SquarePants?",
+    "choices": ["Walt Disney", "Stephen Hillenburg", "Matt Groening", "Nickelodeon"],
+    "answer": "Stephen Hillenburg",
+    "CategoryId": 18,
+    "UserId": 1
+  },
+  {
+    "text": "Which anime is about alchemists Edward and Alphonse Elric?",
+    "choices": ["Attack on Titan", "Fullmetal Alchemist", "Bleach", "Death Note"],
+    "answer": "Fullmetal Alchemist",
+    "CategoryId": 18,
+    "UserId": 1
+  },
+  {
+    "text": "What animal is Pikachu?",
+    "choices": ["Mouse", "Rabbit", "Cat", "Squirrel"],
+    "answer": "Mouse",
+    "CategoryId": 18,
+    "UserId": 1
+  },
+  {
+    "text": "Which cartoon family lives in Springfield?",
+    "choices": ["The Griffins", "The Simpsons", "The Smiths", "The Browns"],
+    "answer": "The Simpsons",
+    "CategoryId": 18,
+    "UserId": 1
+  },
+  {
+    "text": "Who uses a Death Note to eliminate criminals?",
+    "choices": ["L", "Light Yagami", "Ryuk", "Near"],
+    "answer": "Light Yagami",
+    "CategoryId": 18,
+    "UserId": 1
+  },
+  {
+    "text": "Which anime features Titans attacking humanity?",
+    "choices": ["Tokyo Ghoul", "Attack on Titan", "Demon Slayer", "Jujutsu Kaisen"],
+    "answer": "Attack on Titan",
+    "CategoryId": 18,
+    "UserId": 1
+  },
+  {
+    "text": "What cartoon features a boy and his magical dog?",
+    "choices": ["Regular Show", "Adventure Time", "Steven Universe", "Gravity Falls"],
+    "answer": "Adventure Time",
+    "CategoryId": 18,
+    "UserId": 1
+  },
+  {
+    "text": "Which country won the 2022 FIFA World Cup?",
+    "choices": ["France", "Brazil", "Argentina", "Germany"],
+    "answer": "Argentina",
+    "CategoryId": 19,
+    "UserId": 1
+  },
+  {
+    "text": "Who holds the record for the most goals in a single calendar year?",
+    "choices": ["Cristiano Ronaldo", "Pele", "Lionel Messi", "Robert Lewandowski"],
+    "answer": "Lionel Messi",
+    "CategoryId": 19,
+    "UserId": 1
+  },
+  {
+    "text": "What is the standard length of a professional football match in minutes?",
+    "choices": ["45", "90", "100", "120"],
+    "answer": "90",
+    "CategoryId": 19,
+    "UserId": 1
+  },
+  {
+    "text": "Which club has won the most UEFA Champions League titles?",
+    "choices": ["AC Milan", "Liverpool", "Bayern Munich", "Real Madrid"],
+    "answer": "Real Madrid",
+    "CategoryId": 19,
+    "UserId": 1
+  },
+  {
+    "text": "Which player is famously nicknamed 'The King'?",
+    "choices": ["Zidane", "Pele", "Maradona", "Cruyff"],
+    "answer": "Pele",
+    "CategoryId": 19,
+    "UserId": 1
+  },
+  {
+    "text": "How many players are on the field for one team at the start of a match?",
+    "choices": ["10", "11", "12", "15"],
+    "answer": "11",
+    "CategoryId": 19,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has won the most FIFA World Cups?",
+    "choices": ["Germany", "Italy", "Brazil", "Argentina"],
+    "answer": "Brazil",
+    "CategoryId": 19,
+    "UserId": 1
+  },
+  {
+    "text": "What does 'VAR' stand for in football?",
+    "choices": ["Video Assistant Referee", "Virtual Assistant Runner", "Velocity Action Replay", "Visual Assessment Review"],
+    "answer": "Video Assistant Referee",
+    "CategoryId": 19,
+    "UserId": 1
+  },
+  {
+    "text": "Who won the Ballon d'Or in 2023?",
+    "choices": ["Erling Haaland", "Kylian Mbappé", "Lionel Messi", "Kevin De Bruyne"],
+    "answer": "Lionel Messi",
+    "CategoryId": 19,
+    "UserId": 1
+  },
+  {
+    "text": "In which city is the stadium 'Old Trafford' located?",
+    "choices": ["London", "Liverpool", "Manchester", "Birmingham"],
+    "answer": "Manchester",
+    "CategoryId": 19,
+    "UserId": 1
+  },
+  {
+    "text": "How many rings are on the Olympic flag?",
+    "choices": ["4", "5", "6", "7"],
+    "answer": "5",
+    "CategoryId": 20,
+    "UserId": 1
+  },
+  {
+    "text": "Which city hosted the first modern Olympic Games in 1896?",
+    "choices": ["Paris", "Rome", "Athens", "London"],
+    "answer": "Athens",
+    "CategoryId": 20,
+    "UserId": 1
+  },
+  {
+    "text": "In which city were the 2024 Summer Olympics held?",
+    "choices": ["Tokyo", "Los Angeles", "Paris", "Brisbane"],
+    "answer": "Paris",
+    "CategoryId": 20,
+    "UserId": 1
+  },
+  {
+    "text": "Who is the most decorated Olympian of all time?",
+    "choices": ["Usain Bolt", "Michael Phelps", "Simone Biles", "Larisa Latynina"],
+    "answer": "Michael Phelps",
+    "CategoryId": 20,
+    "UserId": 1
+  },
+  {
+    "text": "Which country usually enters last during the Parade of Nations?",
+    "choices": ["Greece", "The Host Nation", "USA", "China"],
+    "answer": "The Host Nation",
+    "CategoryId": 20,
+    "UserId": 1
+  },
+  {
+    "text": "What color medal is awarded for third place?",
+    "choices": ["Silver", "Iron", "Bronze", "Copper"],
+    "answer": "Bronze",
+    "CategoryId": 20,
+    "UserId": 1
+  },
+  {
+    "text": "How often are the Summer Olympic Games held?",
+    "choices": ["Every 2 years", "Every 4 years", "Every 6 years", "Every year"],
+    "answer": "Every 4 years",
+    "CategoryId": 20,
+    "UserId": 1
+  },
+  {
+    "text": "Usain Bolt holds the world record in which event?",
+    "choices": ["400m", "Marathon", "100m", "Long Jump"],
+    "answer": "100m",
+    "CategoryId": 20,
+    "UserId": 1
+  },
+  {
+    "text": "What is the official motto of the Olympics?",
+    "choices": ["Faster, Higher, Stronger", "Victory and Honor", "Sport for All", "Be the Best"],
+    "answer": "Faster, Higher, Stronger",
+    "CategoryId": 20,
+    "UserId": 1
+  },
+  {
+    "text": "Which sport was returned to the Olympics in 2016 after a 112-year absence?",
+    "choices": ["Rugby", "Golf", "Cricket", "Tennis"],
+    "answer": "Golf",
+    "CategoryId": 20,
+    "UserId": 1
+  },
+  {
+    "text": "What is the only continent where spiders do not live?",
+    "choices": ["Australia", "Antarctica", "South America", "Africa"],
+    "answer": "Antarctica",
+    "CategoryId": 21,
+    "UserId": 1
+  },
+  {
+    "text": "Which animal can see both infrared and ultraviolet light?",
+    "choices": ["Goldfish", "Dog", "Cat", "Eagle"],
+    "answer": "Goldfish",
+    "CategoryId": 21,
+    "UserId": 1
+  },
+  {
+    "text": "What is the largest desert in the world?",
+    "choices": ["Sahara", "Gobi", "Antarctic Desert", "Arabian Desert"],
+    "answer": "Antarctic Desert",
+    "CategoryId": 21,
+    "UserId": 1
+  },
+  {
+    "text": "How many hearts does an octopus have?",
+    "choices": ["1", "2", "3", "8"],
+    "answer": "3",
+    "CategoryId": 21,
+    "UserId": 1
+  },
+  {
+    "text": "What is the smallest country in the world?",
+    "choices": ["Monaco", "Vatican City", "Malta", "Liechtenstein"],
+    "answer": "Vatican City",
+    "CategoryId": 21,
+    "UserId": 1
+  },
+  {
+    "text": "Which fruit is actually a berry?",
+    "choices": ["Strawberry", "Raspberry", "Banana", "Cherry"],
+    "answer": "Banana",
+    "CategoryId": 21,
+    "UserId": 1
+  },
+  {
+    "text": "How many bones are in an adult human body?",
+    "choices": ["206", "180", "250", "212"],
+    "answer": "206",
+    "CategoryId": 21,
+    "UserId": 1
+  },
+  {
+    "text": "Which country has the most natural lakes?",
+    "choices": ["USA", "Russia", "Canada", "Finland"],
+    "answer": "Canada",
+    "CategoryId": 21,
+    "UserId": 1
+  },
+  {
+    "text": "What is the main ingredient in hummus?",
+    "choices": ["Lentils", "Black Beans", "Chickpeas", "Soybeans"],
+    "answer": "Chickpeas",
+    "CategoryId": 21,
+    "UserId": 1
+  },
+  {
+    "text": "A group of crows is called what?",
+    "choices": ["A Pack", "A Murder", "A Flock", "A Pride"],
+    "answer": "A Murder",
+    "CategoryId": 21,
+    "UserId": 1
+  },
+  {
+    "text": "What has to be broken before you can use it?",
+    "choices": ["A Window", "A Promise", "An Egg", "A Heart"],
+    "answer": "An Egg",
+    "CategoryId": 22,
+    "UserId": 1
+  },
+  {
+    "text": "I’m tall when I’m young, and I’m short when I’m old. What am I?",
+    "choices": ["A Human", "A Candle", "A Tree", "A Pencil"],
+    "answer": "A Candle",
+    "CategoryId": 22,
+    "UserId": 1
+  },
+  {
+    "text": "What month of the year has 28 days?",
+    "choices": ["February", "January", "June", "All of them"],
+    "answer": "All of them",
+    "CategoryId": 22,
+    "UserId": 1
+  },
+  {
+    "text": "What is full of holes but still holds water?",
+    "choices": ["A Net", "A Sponge", "A Bucket", "A Cloud"],
+    "answer": "A Sponge",
+    "CategoryId": 22,
+    "UserId": 1
+  },
+  {
+    "text": "What question can you never answer \"yes\" to?",
+    "choices": ["Are you awake?", "Are you asleep?", "Can you hear me?", "Is it raining?"],
+    "answer": "Are you asleep?",
+    "CategoryId": 22,
+    "UserId": 1
+  },
+  {
+    "text": "What has hands but cannot clap?",
+    "choices": ["A Baby", "A Clock", "A Mirror", "A Statue"],
+    "answer": "A Clock",
+    "CategoryId": 22,
+    "UserId": 1
+  },
+  {
+    "text": "What has one eye but cannot see?",
+    "choices": ["A Needle", "A Storm", "A Potato", "All of the above"],
+    "answer": "All of the above",
+    "CategoryId": 22,
+    "UserId": 1
+  },
+  {
+    "text": "The more there is, the less you see. What is it?",
+    "choices": ["Mist", "Light", "Darkness", "Water"],
+    "answer": "Darkness",
+    "CategoryId": 22,
+    "UserId": 1
+  },
+  {
+    "text": "What has a neck but no head?",
+    "choices": ["A Shirt", "A Bottle", "A Guitar", "All of the above"],
+    "answer": "All of the above",
+    "CategoryId": 22,
+    "UserId": 1
+  },
+  {
+    "text": "What belongs to you, but others use it more than you do?",
+    "choices": ["Your Phone", "Your Name", "Your Money", "Your Time"],
+    "answer": "Your Name",
+    "CategoryId": 22,
     "UserId": 1
   }
 ]

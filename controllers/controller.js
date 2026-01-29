@@ -1,6 +1,7 @@
-const { User, Category, Question, Score, UserQuestion } = require("../models")
+const { User, Category, Question, Score, UserQuestion } = require("../models/index")
 const bcrypt = require("bcryptjs")
 const {Op} = require("sequelize")
+const question = require("../models/question")
 
 class Controller {
   static home(req, res) {
@@ -98,24 +99,6 @@ class Controller {
     }
   }
 
-  static async submitAnswer(req, res) {
-    try {
-      const { answer } = req.body
-      const question = await Question.findByPk(req.params.id)
-
-      await UserQuestion.create({
-        UserId: req.session.userId,
-        QuestionId: question.id,
-        answer,
-        isCorrect: answer === question.answer
-      })
-
-      res.redirect("back")
-    } catch (error) {
-      res.send(error)
-    }
-  }
-
   static async finishQuiz(req, res) {
     try {
       const { categoryId, answers } = req.body
@@ -161,8 +144,10 @@ class Controller {
         order: [["value", "DESC"]]
       })
 
-      const maxScore = scores[0].value
-      scores.forEach(s => (s.maxValue = maxScore))
+      if (scores.length) {
+        const maxScore = scores[0].value
+        scores.forEach(s => (s.maxValue = maxScore)) 
+      }
 
       res.render("scores", { scores })
     } catch (error) {
@@ -185,7 +170,7 @@ class Controller {
       res.redirect("/categories")
     } catch (error) {
       req.flash("error", "Failed to create category")
-      res.redirect("/admin/categories/new")
+      res.redirect("/admin/categories/add")
     }
   }
 
@@ -241,7 +226,7 @@ class Controller {
       res.redirect("/categories")
     } catch (error) {
       req.flash("error", "Failed to create question")
-      res.redirect("/admin/questions/new")
+      res.redirect("/admin/questions/add")
     }
   }
 
@@ -270,12 +255,14 @@ class Controller {
 
   static async deleteQuestion(req, res) {
     try {
+      const question = await Question.findByPk(req.params.id)
       await Question.destroy({ where: { id: req.params.id } })
       req.flash("success", "Question deleted")
-      res.redirect("/categories")
+      res.redirect(`/questions/${question.CategoryId}`)
     } catch (error) {
+      console.log(error);
       req.flash("error", "Failed to delete question")
-      res.redirect("/categories")
+      res.redirect(`/questions/${question.CategoryId}`)
     }
   }
 }

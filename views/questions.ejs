@@ -88,7 +88,15 @@
 <div class="container">
   <h2>Quiz Time 🧠</h2>
 
-  <form action="/quiz/finish" method="POST">
+    <% if (error && error.length) { %>
+      <p style="color:red; text-align:center;"><%= error[0] %></p>
+    <% } %>
+
+    <% if (success && success.length) { %>
+      <p style="color:green; text-align:center;"><%= success[0] %></p>
+    <% } %>
+
+  <form action="/questions/<%= categoryId %>" method="POST">
     <input type="hidden" name="categoryId" value="<%= categoryId %>">
 
     <% questions.forEach((q, index) => { %>

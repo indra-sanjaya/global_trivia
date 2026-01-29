@@ -15,20 +15,19 @@ router.get("/", isLoggedIn, Controller.home)
 
 router.get("/categories", isLoggedIn, Controller.categories)
 
-router.get("/admin/categories/new", isLoggedIn, isAdmin, Controller.addCategoryPage)
-router.post("/admin/categories", isLoggedIn, isAdmin, Controller.addCategory)
+router.get("/admin/categories/add", isLoggedIn, isAdmin, Controller.addCategoryPage)
+router.post("/admin/categories/add", isLoggedIn, isAdmin, Controller.addCategory)
 router.get("/admin/categories/:id/edit", isLoggedIn, isAdmin, Controller.editCategoryPage)
-router.post("/admin/categories/:id", isLoggedIn, isAdmin, Controller.updateCategory)
-router.post("/admin/categories/:id/delete", isLoggedIn, isAdmin, Controller.deleteCategory)
+router.post("/admin/categories/:id/edit", isLoggedIn, isAdmin, Controller.updateCategory)
+router.get("/admin/categories/:id/delete", isLoggedIn, isAdmin, Controller.deleteCategory)
 
 router.get("/questions/:categoryId", isLoggedIn, Controller.questions)
-router.post("/questions/:id/answer", isLoggedIn, Controller.submitAnswer)
-router.post("/quiz/finish", isLoggedIn, Controller.finishQuiz)
+router.post("/questions/:categoryId", isLoggedIn, Controller.finishQuiz)
 
-router.get("/admin/questions/new", isLoggedIn, isAdmin, Controller.addQuestionPage)
-router.post("/admin/questions", isLoggedIn, isAdmin, Controller.addQuestion)
+router.get("/admin/questions/add", isLoggedIn, isAdmin, Controller.addQuestionPage)
+router.post("/admin/questions/add", isLoggedIn, isAdmin, Controller.addQuestion)
 router.get("/admin/questions/:id/edit", isLoggedIn, isAdmin, Controller.editQuestionPage)
-router.post("/admin/questions/:id", isLoggedIn, isAdmin, Controller.updateQuestion)
+router.post("/admin/questions/:id/edit", isLoggedIn, isAdmin, Controller.updateQuestion)
 router.get("/admin/questions/:id/delete", isLoggedIn, isAdmin, Controller.deleteQuestion)
 
 router.get("/scores", isLoggedIn, Controller.scores)
