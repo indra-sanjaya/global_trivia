@@ -35,6 +35,18 @@ module.exports = (sequelize, DataTypes) => {
             msg: "Description is required"
           }
         }
+      },
+      imageUrl: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "Image URL is required"
+          },
+          notNull: {
+            msg: "Image URL is required"
+          }
+        }
       }
     },
     {

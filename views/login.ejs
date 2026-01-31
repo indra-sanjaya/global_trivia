@@ -4,104 +4,168 @@
   <meta charset="UTF-8">
   <title>Login</title>
   <style>
+    /* Reset & basics */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f6fa;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #6a89cc, #b8e994);
     }
 
     .container {
       width: 400px;
-      margin: 120px auto;
-      padding: 30px;
+      padding: 40px 30px;
       background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Animated gradient circle */
+    .container::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, #ff6b6b, #feca57);
+      top: -80px;
+      right: -80px;
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      color: #2f3640;
     }
 
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      background-color: #4a69bd;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #3b55a0;
+    h2 b {
+      color: #4a69bd;
     }
 
     .message {
       margin-bottom: 15px;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
     }
 
     .message.error {
-      color: red;
+      background-color: #ff7979;
+      color: white;
     }
 
     .message.success {
-      color: green;
+      background-color: #44bd32;
+      color: white;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 12px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+
+    input:focus {
+      border-color: #4a69bd;
+      box-shadow: 0 0 8px rgba(74,105,189,0.5);
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px 0;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(45deg, #4a69bd, #38ada9);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     }
 
     .footer {
-      margin-top: 15px;
+      margin-top: 20px;
       font-size: 14px;
+      color: #555;
     }
 
     .footer a {
       color: #4a69bd;
+      font-weight: bold;
       text-decoration: none;
+      transition: color 0.3s;
     }
 
     .footer a:hover {
+      color: #3b55a0;
       text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 450px) {
+      .container {
+        width: 90%;
+        padding: 30px 20px;
+      }
+
+      input, button {
+        font-size: 16px;
+        padding: 12px;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="container">
+    <h2>Global <b>Trivia Entertainment</b></h2>
     <h2>LOGIN</h2>
 
     <% if (error && error.length) { %>
       <div class="message error"><%= error[0] %></div>
     <% } %>
 
+    <% if (success && success.length) { %>
+      <div class="message success"><%= success[0] %></div>
+    <% } %>
+
     <form action="/login" method="POST">
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="Email"
-      >
-
-      <input 
-        type="password" 
-        name="password" 
-        placeholder="Password"
-      >
-
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
       <button type="submit">LOGIN</button>
     </form>
 
     <div class="footer">
-      Please click
-      <a href="/register">Register</a>
-      if you don't have an account
+      Don't have an account? <a href="/register">Register Now</a>
     </div>
   </div>
 

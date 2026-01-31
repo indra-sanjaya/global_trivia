@@ -4,55 +4,130 @@
   <meta charset="UTF-8">
   <title>Global Trivia</title>
   <style>
+    /* Base & Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: linear-gradient(135deg, #4a69bd, #6a89cc);
       color: white;
-      height: 100vh;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Floating gradient circles */
+    body::before,
+    body::after {
+      content: '';
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #feca57, #ff6b6b);
+      opacity: 0.3;
+      z-index: 0;
+    }
+
+    body::before {
+      top: -80px;
+      right: -80px;
+      animation: float 12s linear infinite;
+    }
+
+    body::after {
+      bottom: -100px;
+      left: -60px;
+      animation: float 15s linear infinite reverse;
+    }
+
+    @keyframes float {
+      0% { transform: rotate(0deg) translateY(0); }
+      50% { transform: rotate(180deg) translateY(10px); }
+      100% { transform: rotate(360deg) translateY(0); }
     }
 
     .container {
+      position: relative;
+      z-index: 1;
       text-align: center;
-      background: rgba(0,0,0,0.25);
-      padding: 50px;
-      border-radius: 10px;
-      width: 400px;
+      background: rgba(0,0,0,0.3);
+      padding: 50px 30px;
+      border-radius: 20px;
+      width: 380px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
     }
 
     h1 {
-      margin-bottom: 30px;
-      font-size: 36px;
+      margin-bottom: 40px;
+      font-size: 42px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
     }
 
     .links a {
       display: block;
       margin: 15px 0;
-      padding: 12px;
-      background-color: white;
-      color: #4a69bd;
+      padding: 14px 0;
+      background: linear-gradient(45deg, #38ada9, #4a69bd);
+      color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 12px;
       font-weight: bold;
-      transition: transform 0.2s, background-color 0.2s;
+      font-size: 18px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .links a:hover {
-      background-color: #eaeaea;
-      transform: scale(1.03);
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     }
 
     .logout {
-      margin-top: 20px;
-      font-size: 14px;
+      margin-top: 30px;
+      font-size: 16px;
     }
 
     .logout a {
-      color: #f8f8f8;
+      color: #ffdd59;
       text-decoration: underline;
+      transition: color 0.3s;
+    }
+
+    .logout a:hover {
+      color: #ffeaa7;
+    }
+
+    /* Success message */
+    .message-success {
+      margin-bottom: 20px;
+      color: #b8f7b8;
+      font-weight: bold;
+      font-size: 16px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    /* Responsive */
+    @media (max-width: 450px) {
+      .container {
+        width: 90%;
+        padding: 40px 20px;
+      }
+      h1 {
+        font-size: 32px;
+      }
+      .links a {
+        font-size: 16px;
+        padding: 12px 0;
+      }
     }
   </style>
 </head>
@@ -62,7 +137,7 @@
     <h1>🌍 Global Trivia</h1>
 
     <% if (success && success.length) { %>
-      <p style="color:#b8f7b8;"><%= success[0] %></p>
+      <div class="message-success"><%= success[0] %></div>
     <% } %>
 
     <div class="links">

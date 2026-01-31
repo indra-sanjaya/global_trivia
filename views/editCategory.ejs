@@ -2,15 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Edit Category</title>
+  <title>Edit Category | Global Trivia</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f5f6fa; }
-    .container { width: 400px; margin: 100px auto; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    h2 { text-align: center; margin-bottom: 20px; }
-    input, textarea, button { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ccc; }
-    button { background: #4a69bd; color: white; border: none; cursor: pointer; font-size: 16px; }
-    button:hover { background: #3b55a0; }
-    .back { display: block; text-align: center; margin-top: 10px; text-decoration: none; color: #555; }
+    /* Base reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #6a89cc, #b8e994);
+      padding: 20px;
+    }
+
+    .container {
+      position: relative;
+      width: 400px;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+
+    /* Floating circle behind */
+    .container::before {
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background: radial-gradient(circle, #ff6b6b, #feca57);
+      border-radius: 50%;
+      top: -40px;
+      right: -40px;
+      opacity: 0.3;
+      z-index: 0;
+      animation: float 12s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: rotate(0deg) translateY(0); }
+      50% { transform: rotate(180deg) translateY(10px); }
+      100% { transform: rotate(360deg) translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 1;
+      color: #2f3640;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      transition: all 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #4a69bd;
+      box-shadow: 0 0 8px rgba(74,105,189,0.5);
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px 0;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(45deg, #4a69bd, #38ada9);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 1;
+      margin-bottom: 10px;
+    }
+
+    button:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .delete-btn {
+      background: linear-gradient(45deg, #ff6b6b, #ff3f3f);
+    }
+
+    .delete-btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(255,0,0,0.3);
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #4a69bd;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    .message {
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .message.error {
+      background: #fee2e2;
+      color: #dc2626;
+    }
+
+    .message.success {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    @media (max-width: 450px) {
+      .container {
+        width: 95%;
+        padding: 30px 20px;
+      }
+      input, textarea, button {
+        font-size: 16px;
+        padding: 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -19,23 +162,29 @@
 
     <% if (error && error.length) { %>
       <% error.forEach(msg => { %>
-        <p style="color:red; text-align:center;"><%= msg %></p>
+        <div class="message error"><%= msg %></div>
+      <% }) %>
+    <% } %>
+
+    <% if (success && success.length) { %>
+      <% success.forEach(msg => { %>
+        <div class="message success"><%= msg %></div>
       <% }) %>
     <% } %>
 
     <form action="/admin/categories/<%= category.id %>/edit" method="POST">
       <label>Name</label>
-      <input type="text" name="name" value="<%= category.name %>" >
+      <input type="text" name="name" value="<%= category.name %>" required>
 
       <label>Description</label>
-      <textarea name="description" ><%= category.description %></textarea>
+      <textarea name="description" rows="4" required><%= category.description %></textarea>
 
       <button type="submit">Update Category</button>
     </form>
 
-    <a href="/admin/categories/<%= category.id %>/delete">
-      <button type="submit" style="background:red;" onclick="return confirm('Delete this category?')">Delete Category</button>
-    </a>
+    <form action="/admin/categories/<%= category.id %>/delete" method="POST">
+      <button type="submit" class="delete-btn" onclick="return confirm('Delete this category?')">Delete Category</button>
+    </form>
 
     <a href="/categories" class="back">← Back to Categories</a>
   </div>
