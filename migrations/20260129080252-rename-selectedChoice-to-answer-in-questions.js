@@ -2,13 +2,8 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
-
-    await queryInterface.renameColumn(
-      'Questions',
-      'selectedChoice',
-      'answer'
-    )
+  async up(queryInterface, Sequelize) {
+    await queryInterface.renameColumn('Questions', 'selectedChoice', 'answer');
 
     /**
      * Add altering commands here.
@@ -18,13 +13,8 @@ module.exports = {
      */
   },
 
-  async down (queryInterface, Sequelize) {
-
-    await queryInterface.renameColumn(
-      'Questions',
-      'answer',
-      'selectedChoice'
-    )
+  async down(queryInterface, Sequelize) {
+    await queryInterface.renameColumn('Questions', 'answer', 'selectedChoice');
 
     /**
      * Add reverting commands here.
@@ -32,5 +22,5 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
-  }
+  },
 };
